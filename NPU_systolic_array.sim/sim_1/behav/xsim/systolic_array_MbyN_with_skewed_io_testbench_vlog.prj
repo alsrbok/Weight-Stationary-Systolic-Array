@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../NPU_systolic_array.srcs/sources_1/new/PE.v" \
+"../../../../NPU_systolic_array.srcs/sources_1/new/systolic_array_MbyN.v" \
+"../../../../NPU_systolic_array.srcs/sources_1/new/systolic_array_MbyN_with_skewed_io.v" \
+"../../../../NPU_systolic_array.srcs/sim_1/new/PE_testbench.v" \
+"../../../../NPU_systolic_array.srcs/sim_1/new/systolic_array_2by2_testbench.v" \
+"../../../../NPU_systolic_array.srcs/sim_1/new/systolic_array_MbyN_testbench.v" \
+"../../../../NPU_systolic_array.srcs/sim_1/new/systolic_array_MbyN_with_skewed_io_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
